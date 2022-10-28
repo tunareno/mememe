@@ -1,12 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
   <meta charset="UTF-8">
-  <title>現在日期時間</title>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職涯測驗結果</title>
 
+  <style type="text/css">
+    * { 
+      font-family: "標楷體"; }
+
+    header { 
+      font-size: 36px;
+      color: purple; }
+
+    .col-lg-4 {
+      border: 1px solid; }
+
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
 <body>
-  <p>現在日期時間為： {{ datetime }} </p>
+  <nav class="navbar navbar-expand-md bg-success navbar-light">
+  <a class="navbar-brand" href="#">選單</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#UCAN">1111</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <main class="container-fluid bg-info text-white text-center">
+
+    <nav>
+      <h1><a class="text-reset text-decoration-none text-light bg-primary" target="_blank" id="COMPANY">池偉銘的職涯測驗結果</a></h1>
+    </nav>
+
+    <img src="/static/imageS.png" alt="照片" width="300" class="img-fluid rounded-circle" id="PICTURE"> 
+    <br><br><br>
+
+    <div class="row">
+      <session id="UCAN" class="col-lg-4">
+        <header><a href="https://ucan.moe.edu.tw/Account/Login.aspx" class="text-reset text-white bg-success">1111人力銀行診斷結果</header>
+        <img src="/static/end.jpg" alt="照片" width="300"> 
+      </session>
+    </div><br><br>
+    
+    
+  </main>
 </body>
 </html>

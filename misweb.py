@@ -5,16 +5,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    homepage = "<h1>池偉銘Python網頁</h1>"
-    homepage += "<a href=/mis>MIS</a><br>"
-    homepage += "<a href=/today>顯示日期時間</a><br>"
-    homepage += "<a href=/welcome?nick=tcyang>傳送使用者暱稱</a><br>"
+    homepage = "<h1>池偉銘網頁</h1>"
     homepage += "<a href=/me>偉銘簡介網頁</a><br>"
+    homepage += "<a href=/mis>MIS工作介紹</a><br>"
+    homepage += "<a href=/today>職涯測驗結果</a><br>"
+    homepage += "<a href=/welcome?nick=tcyang>求職履歷</a><br>"
     return homepage
 
 @app.route("/mis")
 def course():
-    return "<h1>資訊管理導論</h1>"
+    return render_template("MIS.html")
+
 
 @app.route("/today")
 def today():

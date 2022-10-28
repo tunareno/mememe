@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MIS相關工作介紹</title>
+
+	<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: lightpink; }
+
+		.col-lg-4 {
+			border: 1px solid; }
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script>
+		$(document).ready(function(){
+			$("#COMPANY").hover(function(){
+				$("#PICTURE").attr("src","/static/images/logo.jpg");
+			});
+
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+		});
+	</script>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-white navbar-light">
+	<a class="navbar-brand" href="#">選單</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#COMPANY">公司資訊</a></li>
+			<li class="nav-item"><a class="nav-link" href="#worker">職務介紹</a></li>
+			<li class="nav-item"><a class="nav-link" href="#need">工作條件需求</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<main class="container-fluid bg-info text-white text-center">
+
+		<nav>
+			<h1><a href="https://www.vangoodtech.com/" class="text-reset text-decoration-none text-white bg-danger" target="_blank" id="COMPANY">凡谷興業有限公司 </a></h1>
+		</nav>
+
+		<img src="static/logo.png" alt="照片" width="150" class="img-fluid rounded-circle" id="PICTURE"> 
+		<br><br><br>
+
+		<div class="row">
+			<session id="COMPANY" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">公司資訊</header>
+				<h3>公司名：凡谷興業有限公司<br>
+				地址：台中市南屯區大墩十街300號8樓之2<br>
+				服務/商品：</h3>
+				<h4>不同市場文化的線上遊戲產品設計</h4>
+				<h4>符合使用者需求的操作介面</h4>
+				<h4>話題性的精緻線上遊戲產品</h4>
+				<h5>支援iOS及Android系統的遊戲平台應用程式<h5>
+				<h3>公司介紹：</h3>
+				<h4>由一群活力十足的專業遊戲設計團隊組成<br>
+					提供遊戲開發及線上軟體平台系統整合服務<h4>
+			</session>
+
+			<article id="worker" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">職務介紹</header> 
+				<h3>MIS程式設計師、<br>
+					網路管理工程師、<br>
+					系統維護／操作人員<br></h3>
+			</article>
+			
+			<aside id="need" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">
+				工作條件需求</a></header>
+				<h3>接受身份：</h3><h4>不拘</h4>
+				<h3>工作經歷：</h3><h4>不拘</h4>
+				<h3>學歷要求：</h3><h4>大學、碩士</h4>
+				<h3>科系要求：</h3><h4>不拘</h4>
+				<h3>語文條件：</h3><h4>不拘</h4>
+				<h3>擅長工具：</h3><h4>不拘</h4>
+			</aside>
+		</div><br><br>
+		
+		</footer>
+		</footer>
+		
+	</main>
+</body>
+</html>
